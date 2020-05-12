@@ -8,8 +8,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Ping coming soon page</title>
-
+  <script src="./app.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!-- <style>
     .attribution {
@@ -27,16 +28,20 @@
 
   <div class="container">
     <div class="logo"><img src="./images/logo.svg" alt=""></div>
-    <p class="title">We are launching soon!</p>
+    <p class="title">We are launching <span>soon!</span></p>
     <p class="paragraph">Subscribe and get notified</p>
     <form action="#">
-      <input id="email" class="errorInput" type="email" name="" id="">
-      <button>Notify Me</button>
-      <span class="errorText">Please provide a valid email address</span>
+      <input id="email" class="" name="" required>
+      <span id="errorText">Please provide a valid email address</span>
+      <button type="submit" onclick="validate()">Notify Me</button>
     </form>
     <div class="dashBoard"><img src="./images/illustration-dashboard.png" alt=""></div>
     <div class="social">
-      <div class="icons"></div>
+      <div class="icons">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
       <p class="copyRights">&copy; Copyright Ping. All rights reserved.</p>
     </div>
   </div>
@@ -45,9 +50,14 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/usamakhangt4/ping-coming-soon-page"
+        style="color: hsl(209, 33%, 12%);">Usama</a>.
     </p>
   </footer>
+
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 </body>
 
 </html>
